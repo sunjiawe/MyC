@@ -41,7 +41,7 @@ int rm(Vector* a,int r)
 {
 	int ret;
 	int i;
-	ret = a->elem[r];
+	ret = a->elem[r];   //备份元素，以便于返回
 	for(i=r; i<a->size; i++)
 	{
 		a->elem[i] = a->elem[i+1];
